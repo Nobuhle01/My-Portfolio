@@ -16,7 +16,7 @@ function Personal() {
           <div className="col-md-4">
             <FaLaptopCode className="fs-1 text-success mb-3" />
             <h5>Favorite Tools</h5>
-            <p>VSCode, Figma, GitHub, Universe.io</p>
+            <p>VSCode, Figma, GitHub, Universe.io, Netlify</p>
           </div>
           <div className="col-md-4">
             <FaBookOpen className="fs-1 text-warning mb-3" />

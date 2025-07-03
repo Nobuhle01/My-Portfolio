@@ -36,6 +36,26 @@ function Projects() {
         },
       ],
     },
+    {
+      title: 'React CV (Online Resume)',
+      description: 'An interactive resume built using React and styled professionally for PDF export and printing.',
+      branches: [
+        {
+          name: 'main',
+          codeLink: 'https://github.com/Nobuhle01/react-cv',
+        },
+      ],
+    },
+    {
+      title: 'Portfolio Website',
+      description: 'A live portfolio built using React and Bootstrap to showcase projects and skills.',
+      branches: [
+        {
+          name: 'main',
+          codeLink: 'https://github.com/Nobuhle01/My-Portfolio',
+        },
+      ],
+    },
   ];
 
   return (

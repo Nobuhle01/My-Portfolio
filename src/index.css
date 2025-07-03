@@ -1,4 +1,3 @@
-
 :root {
   --color-primary: #74b7f5;       /* Bright blue */
   --color-secondary: #f5f7fa;     /* Light gray background */
@@ -8,19 +7,15 @@
   --color-link-hover: #1a4f8b;
 }
 
-/* Body & Page Border */
+/* Body */
 html, body {
-  height: 202.9%;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: var(--color-secondary);
-}
-
-body {
   font-family: 'Roboto', sans-serif;
-  border: 8px solid var(--color-primary);
-  box-sizing: border-box;
-  min-height: 100vh;
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
 }
 
 /* Links */
@@ -38,20 +33,33 @@ a:hover, a:focus {
 .btn-primary {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #356ab9;
   border-color: #356ab9;
+  box-shadow: 0 4px 12px rgba(53, 106, 185, 0.4);
+}
+
+.btn-outline-primary {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 /* Cards */
 .card {
   border-radius: 12px;
   transition: box-shadow 0.3s ease;
+  background-color: white;
+  border: none;
 }
 .card:hover {
-  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.15);
 }
 
 /* Section headings */
@@ -59,6 +67,7 @@ h2 {
   color: var(--color-primary);
   font-weight: 700;
   margin-bottom: 2rem;
+  text-align: center;
   position: relative;
 }
 h2::after {
@@ -79,4 +88,18 @@ img.rounded-circle {
 }
 img.rounded-circle:hover {
   transform: scale(1.05);
+}
+
+/* Resume buttons */
+#resume .btn {
+  margin-right: 1rem;
+  min-width: 160px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #resume .btn {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 }

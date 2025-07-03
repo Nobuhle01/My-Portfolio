@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaDownload, FaFilePdf } from 'react-icons/fa';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';

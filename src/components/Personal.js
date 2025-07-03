@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMusic, FaLaptopCode, FaBookOpen, FaQuoteLeft, FaHeart } from 'react-icons/fa';
+import { FaMusic, FaLaptopCode, FaBookOpen, FaQuoteLeft} from 'react-icons/fa';
 
 function Personal() {
   return (
